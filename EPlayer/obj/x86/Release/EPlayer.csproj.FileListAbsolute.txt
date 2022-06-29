@@ -1,0 +1,13 @@
+C:\Users\Александр\source\repos\EPlayer\EPlayer\bin\x86\Release\EPlayer.exe.config
+C:\Users\Александр\source\repos\EPlayer\EPlayer\bin\x86\Release\EPlayer.exe
+C:\Users\Александр\source\repos\EPlayer\EPlayer\bin\x86\Release\EPlayer.pdb
+C:\Users\Александр\source\repos\EPlayer\EPlayer\bin\x86\Release\Microsoft.DirectX.AudioVideoPlayback.dll
+C:\Users\Александр\source\repos\EPlayer\EPlayer\bin\x86\Release\Microsoft.DirectX.Direct3D.dll
+C:\Users\Александр\source\repos\EPlayer\EPlayer\bin\x86\Release\Microsoft.DirectX.dll
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.Form1.resources
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.Properties.Resources.resources
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.csproj.GenerateResource.cache
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.csproj.CopyComplete
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.exe
+C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\x86\Release\EPlayer.pdb
