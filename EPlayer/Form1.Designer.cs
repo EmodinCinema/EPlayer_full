@@ -42,7 +42,6 @@ namespace EPlayer
             this.buttonDeletList = new System.Windows.Forms.Button();
             this.buttonAddList = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonClosePanel2 = new System.Windows.Forms.Button();
             this.panelSound = new System.Windows.Forms.Panel();
@@ -61,11 +60,12 @@ namespace EPlayer
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.WMP1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerDefault = new System.Windows.Forms.Timer(this.components);
+            this.WMP = new AxWMPLib.AxWindowsMediaPlayer();
+            this.WMP1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -73,12 +73,12 @@ namespace EPlayer
             this.splitContainer1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WMP)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelSound.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WMP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WMP1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,10 +147,12 @@ namespace EPlayer
             // ColumnName
             // 
             this.ColumnName.Text = "File Name";
+            this.ColumnName.Width = 69;
             // 
             // ColumnPath
             // 
             this.ColumnPath.Text = "File Path";
+            this.ColumnPath.Width = 108;
             // 
             // panel5
             // 
@@ -220,16 +222,6 @@ namespace EPlayer
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(166, 403);
             this.listBox1.TabIndex = 0;
-            // 
-            // WMP
-            // 
-            this.WMP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WMP.Enabled = true;
-            this.WMP.Location = new System.Drawing.Point(0, 0);
-            this.WMP.Name = "WMP";
-            this.WMP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMP.OcxState")));
-            this.WMP.Size = new System.Drawing.Size(868, 403);
-            this.WMP.TabIndex = 0;
             // 
             // panel2
             // 
@@ -494,19 +486,6 @@ namespace EPlayer
             this.openToolStripMenuItem.Text = "Открыть";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
-            // WMP1
-            // 
-            this.WMP1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WMP1.CausesValidation = false;
-            this.WMP1.Enabled = true;
-            this.WMP1.Location = new System.Drawing.Point(302, -54);
-            this.WMP1.Name = "WMP1";
-            this.WMP1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMP1.OcxState")));
-            this.WMP1.Size = new System.Drawing.Size(503, 217);
-            this.WMP1.TabIndex = 3;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -529,6 +508,29 @@ namespace EPlayer
             this.timerDefault.Enabled = true;
             this.timerDefault.Interval = 1000;
             this.timerDefault.Tick += new System.EventHandler(this.timerDefault_Tick);
+            // 
+            // WMP
+            // 
+            this.WMP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WMP.Enabled = true;
+            this.WMP.Location = new System.Drawing.Point(0, 0);
+            this.WMP.Name = "WMP";
+            this.WMP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMP.OcxState")));
+            this.WMP.Size = new System.Drawing.Size(868, 403);
+            this.WMP.TabIndex = 0;
+            // 
+            // WMP1
+            // 
+            this.WMP1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.WMP1.CausesValidation = false;
+            this.WMP1.Enabled = true;
+            this.WMP1.Location = new System.Drawing.Point(302, -54);
+            this.WMP1.Name = "WMP1";
+            this.WMP1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMP1.OcxState")));
+            this.WMP1.Size = new System.Drawing.Size(503, 217);
+            this.WMP1.TabIndex = 3;
             // 
             // Form1
             // 
@@ -554,7 +556,6 @@ namespace EPlayer
             this.splitContainer1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.WMP)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelSound.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -562,6 +563,7 @@ namespace EPlayer
             this.panel3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WMP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WMP1)).EndInit();
             this.ResumeLayout(false);
 
