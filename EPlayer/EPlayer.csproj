@@ -132,6 +132,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bin\x86\Debug\Data\Configuration.cs" />
+    <Compile Include="bin\x86\Debug\Data\MyDbContext.cs" />
+    <Compile Include="bin\x86\Debug\Data\MyDbContextInitializer.cs" />
+    <Compile Include="bin\x86\Debug\Data\Tables\Videos.cs" />
+    <Compile Include="bin\x86\Debug\Migrations\Configuration.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

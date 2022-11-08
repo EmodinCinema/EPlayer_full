@@ -21,6 +21,7 @@ C:\Users\Александр\source\repos\EPlayer\EPlayer\obj\Debug\EPlayer.cspro
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\EPlayer.exe.config
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\EPlayer.exe
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\EPlayer.pdb
+C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\ColorSlider.dll
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\Microsoft.DirectX.AudioVideoPlayback.dll
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\Microsoft.DirectX.Direct3D.dll
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\Microsoft.DirectX.dll
@@ -58,4 +59,3 @@ C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\EntityFramework.xml
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\System.Data.SQLite.xml
 C:\Users\User\source\repos\EPlayer\EPlayer\obj\Debug\EPlayer.csproj.CopyComplete
-C:\Users\User\source\repos\EPlayer\EPlayer\bin\Debug\ColorSlider.dll
