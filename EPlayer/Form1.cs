@@ -14,6 +14,7 @@ using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 using ClosedXML.Excel;
 
+
 namespace EPlayer
 {
     public partial class Form1 : Form
@@ -101,22 +102,18 @@ namespace EPlayer
             {
                 buttonSound100.BackgroundImage = Properties.Resources.Sound100;
             }
-
             if (Vol <= 75)
             {
                 buttonSound100.BackgroundImage = Properties.Resources.Sound75;
             }
-
              if (Vol <= 50)
             {
                 buttonSound100.BackgroundImage = Properties.Resources.Sound50;
             }
-
             if (Vol <= 25)
             {
                 buttonSound100.BackgroundImage = Properties.Resources.Sound25;
             }
-
             if (Vol <=0)
             {
                  buttonSound100.BackgroundImage = Properties.Resources.Sound0;
@@ -149,13 +146,14 @@ namespace EPlayer
             {
                 if ((int)WMP.Ctlcontrols.currentPosition != 0)
                 {
-                    labelTime.Text = WMP.Ctlcontrols.currentPositionString + " / " + WMP.currentMedia.durationString;// Посмотреть ошибку
+                    labelTime.Text = WMP.Ctlcontrols.currentPositionString + " / " + WMP.currentMedia.durationString;
                 }
             }
             catch (Exception) { }
 
             try
             {
+                if (WMP.currentMedia == null) return;
                 SliderVideo.Maximum = (int)WMP.currentMedia.duration;
                 SliderVideo.Value = (int)WMP.Ctlcontrols.currentPosition;
             }
@@ -198,7 +196,6 @@ namespace EPlayer
             try
             {
                 WMP.Ctlcontrols.currentPosition = SliderVideo.Value;
-
             }
             catch (Exception){ }
 
@@ -359,6 +356,4 @@ namespace EPlayer
             }
         }
     }
-
-
 }
